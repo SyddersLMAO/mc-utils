@@ -1,0 +1,62 @@
+---
+layout: default
+title: MOTD Generator
+permalink: /util/motd-generator
+---
+
+<head>
+    <link rel="stylesheet" href="\pages\utils\server\motd-generator\style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="formatting">
+            <div id="color-picker" class="color-button-group">
+                <button data-color="§0" style="background-color: #000000;" title="Black"></button>
+                <button data-color="§1" style="background-color: #0000aa;" title="Dark Blue"></button>
+                <button data-color="§2" style="background-color: #00aa00;" title="Dark Green"></button>
+                <button data-color="§3" style="background-color: #00aaaa;" title="Dark Aqua"></button>
+                <button data-color="§4" style="background-color: #aa0000;" title="Dark Red"></button>
+                <button data-color="§5" style="background-color: #aa00aa;" title="Dark Purple"></button>
+                <button data-color="§6" style="background-color: #ffaa00;" title="Gold"></button>
+                <button data-color="§7" style="background-color: #aaaaaa;" title="Gray"></button>
+                <button data-color="§8" style="background-color: #555555;" title="Dark Gray"></button>
+                <button data-color="§9" style="background-color: #5555ff;" title="Blue"></button>
+                <button data-color="§a" style="background-color: #55ff55;" title="Green"></button>
+                <button data-color="§b" style="background-color: #55ffff;" title="Aqua"></button>
+                <button data-color="§c" style="background-color: #ff5555;" title="Red"></button>
+                <button data-color="§d" style="background-color: #ff55ff;" title="Light Purple"></button>
+                <button data-color="§e" style="background-color: #ffff55;" title="Yellow"></button>
+                <button data-color="§f" style="background-color: #ffffff;" title="White"></button>
+              
+                <button data-color="§l" title="Bold"><strong>B</strong></button>
+                <button data-color="§o" title="Italic"><em>I</em></button>
+                <button data-color="§n" title="Underline" style="text-decoration: underline;">U</button>
+                <button data-color="§m" title="Strikethrough" style="text-decoration: line-through;">S</button>
+                <button data-color="§k" title="Obfuscated">O</button>
+                <button data-color="§r" title="Reset">R</button>
+              </div>
+              
+            <input type="hidden" id="color" name="color" value="§f">
+        </div>
+
+        <textarea id="motd-input" rows="2" placeholder="Enter your MOTD..."></textarea>
+
+        <button id="preview-button">Preview MOTD</button>
+
+        <div class="motd-preview-container">
+            <img src="\assets\images\server-template.png">
+            <div class="motd-text-overlay">
+                <pre id="motd-preview">Minecraft Server\nheehee dsfds sasasdf</pre>
+            </div>
+        </div>
+
+        <button id="generate-button">Generate MOTD</button>
+
+        <div class="output">
+            <strong>motd=</strong>
+            <input type="text" id="motd-output" readonly>
+        </div>
+    </div>
+
+    <script src="\pages\utils\server\motd-generator\script.js"></script>
+</body>
