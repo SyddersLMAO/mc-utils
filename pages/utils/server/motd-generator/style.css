@@ -1,0 +1,128 @@
+.color-button-group {
+    margin-bottom: 5px;
+    background-color: #161616;
+    padding: 5px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.color-button-group button {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #444;
+    border-radius: 4px;
+    margin: 3px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.1s ease;
+}
+  
+.color-button-group button:hover {
+    transform: scale(1.1);
+}
+  
+.color-button-group button.selected {
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px #fff;
+}
+
+#motd-input {
+    resize: none;
+    font-size: 30px;
+    width: 80%;
+    border: 3px solid #161616;
+    background-color: #333;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.motd-preview-container {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+  
+.motd-background {
+    display: block;
+    max-width: 100%;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+  
+.motd-text-overlay {
+    position: absolute;
+    top: 45%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    white-space: pre-wrap;
+    pointer-events: none;
+    width: 100%;
+    height: 80%;
+}
+
+pre {
+    color: #555555;
+    font-family: 'Minecraft';
+    font-size: 40px;
+    font-weight: 100;
+    text-align: start;
+    vertical-align: top;
+    word-break: break-all;
+    line-height: 1;
+    text-shadow: 4px 4px #222222;
+}
+
+#preview-button {
+    background-color: #f49ac1;
+    color: white;
+    margin-bottom: 20px;
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#preview-button:hover {
+    background-color: #f5aaca;
+}
+
+#generate-button {
+    color: white;
+    background-color: #4CAF50;
+    margin-bottom: 10px;
+    width: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generate-button:hover {
+    background-color: #45a049;
+}
+
+.output {
+    width: 80%;
+    font-size: 20px;
+}
+
+#motd-output {
+    width: 100%;
+    font-size: 20px;
+    resize: none;
+    border: 3px solid #161616;
+    background-color: #333;
+    color: white;
+    padding: 5px 0px;
+}
