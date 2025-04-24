@@ -4,11 +4,8 @@ title: Leather Dye Generator
 permalink: /util/leather-dye
 ---
 
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dyed Leather Armor Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/utils/client/leather/style.css">
 </head>
 <body>
   <div class="container">
@@ -21,6 +18,5 @@ permalink: /util/leather-dye
 
     <pre id="outputCommands"></pre>
   </div>
-  <script src="script.js"></script>
+  <script src="/utils/client/leather/script.js"></script>
 </body>
-</html>
