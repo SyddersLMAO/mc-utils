@@ -39,6 +39,11 @@ body {
     font-weight: bold;
     background-color: #2b2b2b;
   }
+
+.navbar-brand a {
+  color: #f49ac1;
+  text-decoration: none;
+}
   
 .navbar-links {
     list-style: none;
