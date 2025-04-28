@@ -1,0 +1,98 @@
+#server-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+#server-form label {
+    width: 45%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#server-form label input {
+    max-width: 100%;
+    font-size: 25px;
+    border: 3px solid #333;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    font-family: 'Minecraft';
+}
+
+#server-form label select {
+    max-width: 100%;
+    font-size: 25px;
+    border: 3px solid #333;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    font-family: 'Minecraft';
+}
+
+.upload-container {
+    width: 100%;
+    padding: 20px;
+    border: 3px solid #f49ac1;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.upload-container input::file-selector-button {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #f49ac1;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#upload-properties {
+    text-align: left;
+}
+
+#output-box {
+    width: 100%;
+    background-color: #444;
+    border: 3px solid #333;
+    border-radius: 5px;
+}
+
+.buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#generate-button {
+    color: white;
+    background-color: #f49ac1;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#copy-button {
+    color: white;
+    background-color: #4CAF50;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
