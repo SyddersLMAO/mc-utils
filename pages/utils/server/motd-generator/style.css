@@ -92,7 +92,7 @@ pre {
 
 
 #preview-button {
-    background-color: #f49ac1;
+    background-color: var(--pink);
     color: white;
     margin-bottom: 20px;
     width: 20%;
@@ -106,12 +106,12 @@ pre {
 }
 
 #preview-button:hover {
-    background-color: #f5aaca;
+    background-color: var(--pink-hover);
 }
 
 #generate-button {
     color: white;
-    background-color: #4CAF50;
+    background-color: var(--green);
     margin-bottom: 10px;
     width: 20%;
     padding: 10px;
@@ -124,7 +124,7 @@ pre {
 }
 
 #generate-button:hover {
-    background-color: #45a049;
+    background-color: var(--green-hover);
 }
 
 .output {

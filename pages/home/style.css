@@ -5,7 +5,7 @@
 .title {
     font-size: 50px;
     text-align: center;
-    color: #f49ac1;
+    color: var(--pink);
 }
 
 .subtitle {

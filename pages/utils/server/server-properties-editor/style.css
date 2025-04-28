@@ -35,7 +35,7 @@
 .upload-container {
     width: 100%;
     padding: 20px;
-    border: 3px solid #f49ac1;
+    border: 3px solid var(--pink);
     border-radius: 10px;
     font-size: 20px;
     margin-bottom: 20px;
@@ -46,11 +46,15 @@
     font-size: 15px;
     font-weight: bold;
     color: white;
-    background-color: #f49ac1;
+    background-color: var(--pink);
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.upload-container input::file-selector-button:hover {
+    background-color: var(--pink-hover);
 }
 
 #upload-properties {
@@ -73,7 +77,7 @@
 
 #generate-button {
     color: white;
-    background-color: #f49ac1;
+    background-color: var(--pink);
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -84,9 +88,13 @@
     transition: background-color 0.3s ease;
 }
 
+#generate-button:hover {
+    background-color: var(--green-hover);
+}
+
 #copy-button {
     color: white;
-    background-color: #4CAF50;
+    background-color: var(--green);
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
