@@ -1,0 +1,44 @@
+---
+layout: default
+title: Server Status
+description: Check the status of any server
+permalink: /util/server-status
+---
+
+<link rel="stylesheet" href="\pages\utils\server\server-status\style.css">
+
+<div class="container">
+    <h1>Server Status</h1>
+
+    <form id="server-form">
+        <input type="text" id="server" name="server" required placeholder="e.g. hypixel.net">
+        <button type="submit">Check Status</button>
+    </form>
+
+    <div id="server-status" class="hidden">
+        <div class="top-info">
+            <img alt="Server Icon" id="server-icon" width="128" height="128">
+            <div>
+                <h2 id="server-hostname">Server Hostname</h2>
+                <p id="server-ip">IP: </p>
+                <p id="server-port">Port: </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p id="server-motd"></p>
+
+        <p><strong>Version:</strong> <span id="server-version"></span></p>
+        <p><strong>Players:</strong> <span id="server-players"></span></p>
+
+        <hr>
+
+        <div id="player-list">
+            <strong>Players:</strong>
+            <ul id="player-names"></ul>
+        </div>
+    </div>
+
+    <script src="\pages\utils\server\server-status\script.js"></script>
+</div>
