@@ -1,0 +1,280 @@
+---
+layout: default
+title: Server Properties Editor
+permalink: /util/server-properties-editor
+---
+
+<link rel="stylesheet" href="\pages\utils\server\server-properties-editor\style.css">
+
+<div class="container">
+    <div class="upload-container">
+        <p>Already have a file? Upload it here:</p>
+        <input type="file" id="upload-properties" accept=".properties">
+    </div>
+
+    <form id="server-form">
+        <label>accepts-transfers:
+            <select name="accepts-transfers">
+                <option value="true">true</option>
+                <option value="false" selected>false</option>
+            </select>
+        </label>
+    
+        <label>allow-flight:
+            <select name="allow-flight">
+                <option value="true">true</option>
+                <option value="false" selected>false</option>
+            </select>
+        </label>
+    
+        <label>allow-nether:
+            <select name="allow-nether">
+                <option value="true" selected>true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>broadcast-console-to-ops:
+            <select name="broadcast-console-to-ops">
+                <option value="true" selected>true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>broadcast-rcon-to-ops:
+            <select name="broadcast-rcon-to-ops">
+                <option value="true" selected>true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>bug-report-link: <input type="text" name="bug-report-link"></label>
+    
+        <label>debug:
+            <select name="debug">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>difficulty:
+            <select name="difficulty">
+                <option value="peaceful">peaceful</option>
+                <option value="easy" selected>easy</option>
+                <option value="normal">normal</option>
+                <option value="hard">hard</option>
+            </select>
+        </label>
+    
+        <label>enable-command-block:
+            <select name="enable-command-block">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>enable-jmx-monitoring:
+            <select name="enable-jmx-monitoring">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>enable-query:
+            <select name="enable-query">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>enable-rcon:
+            <select name="enable-rcon">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>enable-status:
+            <select name="enable-status">
+                <option value="true" selected>true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>enforce-secure-profile:
+            <select name="enforce-secure-profile">
+                <option value="true" selected>true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>enforce-whitelist:
+            <select name="enforce-whitelist">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>entity-broadcast-range-percentage: <input type="number" name="entity-broadcast-range-percentage" value="100"></label>
+    
+        <label>force-gamemode:
+            <select name="force-gamemode">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>function-permission-level: <input type="number" name="function-permission-level" value="2"></label>
+    
+        <label>gamemode:
+            <select name="gamemode">
+                <option value="survival" selected>survival</option>
+                <option value="creative">creative</option>
+                <option value="adventure">adventure</option>
+                <option value="spectator">spectator</option>
+            </select>
+        </label>
+    
+        <label>generate-structures:
+            <select name="generate-structures">
+                <option value="true" selected>true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>generator-settings: <input type="text" name="generator-settings" value="{}"></label>
+    
+        <label>hardcore:
+            <select name="hardcore">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>hide-online-players:
+            <select name="hide-online-players">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>initial-disabled-packs: <input type="text" name="initial-disabled-packs"></label>
+        <label>initial-enabled-packs: <input type="text" name="initial-enabled-packs" value="vanilla"></label>
+        <label>level-name: <input type="text" name="level-name" value="world"></label>
+        <label>level-seed: <input type="text" name="level-seed"></label>
+        <label>level-type: <input type="text" name="level-type" value="minecraft:normal"></label>
+    
+        <label>log-ips:
+            <select name="log-ips">
+                <option value="true" selected>true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>max-chained-neighbor-updates: <input type="number" name="max-chained-neighbor-updates" value="1000000"></label>
+        <label>max-players: <input type="number" name="max-players" value="20"></label>
+        <label>max-tick-time: <input type="number" name="max-tick-time" value="60000"></label>
+        <label>max-world-size: <input type="number" name="max-world-size" value="29999984"></label>
+    
+        <label>motd: <input type="text" name="motd" value=""></label>
+        <label>network-compression-threshold: <input type="number" name="network-compression-threshold" value="256"></label>
+    
+        <label>online-mode:
+            <select name="online-mode">
+                <option value="true" selected>true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>op-permission-level: <input type="number" name="op-permission-level" value="4"></label>
+        <label>pause-when-empty-seconds: <input type="number" name="pause-when-empty-seconds" value="-1"></label>
+        <label>player-idle-timeout: <input type="number" name="player-idle-timeout" value="0"></label>
+    
+        <label>prevent-proxy-connections:
+            <select name="prevent-proxy-connections">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>pvp:
+            <select name="pvp">
+                <option value="true" selected>true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>query.port: <input type="number" name="query.port" value="25565"></label>
+        <label>rate-limit: <input type="number" name="rate-limit" value="0"></label>
+        <label>rcon.password: <input type="text" name="rcon.password"></label>
+        <label>rcon.port: <input type="number" name="rcon.port" value="25575"></label>
+    
+        <label>region-file-compression:
+            <select name="region-file-compression">
+                <option value="deflate" selected>deflate</option>
+                <option value="gzip">gzip</option>
+                <option value="zlib">zlib</option>
+            </select>
+        </label>
+    
+        <label>require-resource-pack:
+            <select name="require-resource-pack">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>resource-pack: <input type="text" name="resource-pack"></label>
+        <label>resource-pack-id: <input type="text" name="resource-pack-id"></label>
+        <label>resource-pack-prompt: <input type="text" name="resource-pack-prompt"></label>
+        <label>resource-pack-sha1: <input type="text" name="resource-pack-sha1"></label>
+        <label>server-ip: <input type="text" name="server-ip"></label>
+        <label>server-port: <input type="number" name="server-port" value="25565"></label>
+        <label>simulation-distance: <input type="number" name="simulation-distance" value="10"></label>
+    
+        <label>spawn-monsters:
+            <select name="spawn-monsters">
+                <option value="true" selected>true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>spawn-protection: <input type="number" name="spawn-protection" value="16"></label>
+    
+        <label>sync-chunk-writes:
+            <select name="sync-chunk-writes">
+                <option value="true" selected>true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>text-filtering-config: <input type="text" name="text-filtering-config"></label>
+        <label>text-filtering-version: <input type="number" name="text-filtering-version" value="0"></label>
+    
+        <label>use-native-transport:
+            <select name="use-native-transport">
+                <option value="true" selected>true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    
+        <label>view-distance: <input type="number" name="view-distance" value="10"></label>
+    
+        <label>white-list:
+            <select name="white-list">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>
+        </label>
+    </form>    
+
+    <div class="buttons-container">
+        <button id="generate-button">Generate server.properties</button>
+        <button id="copy-button" class="hidden">Copy</button>
+    </div>
+    
+    <pre id="output-box" class="hidden"></pre>
+    
+</div>
+
+<script src="\pages\utils\server\server-properties-editor\script.js"></script>

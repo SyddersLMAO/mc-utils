@@ -39,42 +39,57 @@
     margin-bottom: 10px;
 }
 
+.motd-container {
+    margin-bottom: 20px;
+}
+
+.motd-container small {
+    color: #818181;
+    font-size: 100%;
+}
+
 .motd-preview-container {
     position: relative;
     display: inline-block;
-    width: fit-content;
-    margin-bottom: 20px;
-}
-  
-.motd-background {
-    display: block;
-    max-width: 100%;
+    width: 100%;
+    margin: 0 auto 0 auto;
     border: 2px solid #333;
     border-radius: 10px;
 }
   
+.motd-background {
+    display: block;
+    width: 100%;
+}
+  
 .motd-text-overlay {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 62%;
     transform: translate(-50%, -50%);
     white-space: pre-wrap;
     pointer-events: none;
     width: 100%;
-    height: 80%;
+    height: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 1rem;
 }
 
 pre {
     color: #555555;
-    font-family: 'Minecraft';
-    font-size: 40px;
-    font-weight: 100;
+    font-family: 'Minecraft', monospace;
+    font-size: clamp(8px, 2.2vw, 50px);
     text-align: start;
-    vertical-align: top;
-    word-break: break-all;
+    word-break: break-word;
     line-height: 1;
-    text-shadow: 4px 4px #222222;
+    text-shadow: 0.1em 0.1em #222222;
+    margin: 0;
 }
+
 
 #preview-button {
     background-color: #f49ac1;
