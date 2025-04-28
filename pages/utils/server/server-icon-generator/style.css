@@ -1,0 +1,43 @@
+input::file-selector-button {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--pink);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input::file-selector-button:hover {
+    background-color: var(--pink-hover);
+}
+
+canvas {
+    width: 30%;
+    height: 30%;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    margin: 20px 0;
+    border: 3px solid #444;
+}
+
+#download-link {
+    color: white;
+    background-color: var(--green);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+#download-link:hover {
+    background-color: var(--green-hover);
+}
