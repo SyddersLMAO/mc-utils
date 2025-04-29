@@ -1,0 +1,30 @@
+---
+layout: default
+title: Whitelist Generator
+description: Generate a whitelist compatible with geyser servers
+permalink: /util/whitelist-generator
+---
+
+<link rel="stylesheet" href="\pages\utils\server\whitelist-generator\style.css">
+
+<div class="container">
+    <h1>Whitelist Generator</h1>
+
+    <form id="player-form">
+        <div class="player-entry">
+            <input type="text" placeholder="Username" class="username">
+            <label>
+                <input type="checkbox" class="is-bedrock">
+                <span class="checkmark"></span>
+                Bedrock
+            </label>
+        </div>
+    </form>
+    <button id="add-player">Add Player</button>
+
+    <button id="generate">Generate Whitelist</button>
+    <pre class="hidden" id="output"></pre>
+    <button id="download" class="hidden">Download File</button>
+</div>
+
+<script src="\pages\utils\server\whitelist-generator\script.js"></script>

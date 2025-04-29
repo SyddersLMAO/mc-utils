@@ -1,16 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.body.classList.add('dark-mode');
+    const savedTheme = localStorage.getItem('theme');
 
-    const isDarkMode = document.body.classList.contains('dark-mode');
-    document.getElementById('theme-toggle').innerHTML = isDarkMode ? '<a><i class="fa-solid fa-moon"></i></a>' : '<a><i class="fa-solid fa-sun"></i></a>';
+    if (savedTheme === "light") {
+        document.body.classList.add('light-mode');
+    }
+
+    const isLightMode = document.body.classList.contains('light-mode');
+    document.getElementById('theme-toggle').innerHTML = isLightMode ? '<a><i class="fa-solid fa-moon"></i></a>' : '<a><i class="fa-solid fa-sun"></i></a>';
 });
   
 document.getElementById('theme-toggle').addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
+    document.body.classList.toggle('light-mode');
 
-    const isDarkMode = document.body.classList.contains('dark-mode');
-    document.getElementById('theme-toggle').innerHTML = isDarkMode ? '<a><i class="fa-solid fa-moon"></i></a>' : '<a><i class="fa-solid fa-sun"></i></a>';
+    const isLightMode = document.body.classList.contains('light-mode');
+    document.getElementById('theme-toggle').innerHTML = isLightMode ? '<a><i class="fa-solid fa-moon"></i></a>' : '<a><i class="fa-solid fa-sun"></i></a>';
 
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+    localStorage.setItem('theme', isLightMode ? 'light' : 'dark');
 });
   
