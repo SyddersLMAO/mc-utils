@@ -15,27 +15,27 @@
 #server-form label input {
     max-width: 100%;
     font-size: 25px;
-    border: 3px solid #333;
+    border: 3px solid var(--background-outline-color);
     border-radius: 5px;
-    background-color: #444;
-    color: white;
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
     font-family: 'Minecraft';
 }
 
 #server-form label select {
     max-width: 100%;
     font-size: 25px;
-    border: 3px solid #333;
+    border: 3px solid var(--background-outline-color);
     border-radius: 5px;
-    background-color: #444;
-    color: white;
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
     font-family: 'Minecraft';
 }
 
 .upload-container {
     width: 100%;
     padding: 20px;
-    border: 3px solid var(--pink);
+    border: 3px solid var(--primary);
     border-radius: 10px;
     font-size: 20px;
     margin-bottom: 20px;
@@ -46,7 +46,7 @@
     font-size: 15px;
     font-weight: bold;
     color: white;
-    background-color: var(--pink);
+    background-color: var(--primary);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -54,7 +54,7 @@
 }
 
 .upload-container input::file-selector-button:hover {
-    background-color: var(--pink-hover);
+    background-color: var(--primary-hover);
 }
 
 #upload-properties {
@@ -63,8 +63,8 @@
 
 #output-box {
     width: 100%;
-    background-color: #444;
-    border: 3px solid #333;
+    background-color: var(--secondary-background-color);
+    border: 3px solid var(--background-outline-color);
     border-radius: 5px;
 }
 
@@ -77,7 +77,7 @@
 
 #generate-button {
     color: white;
-    background-color: var(--pink);
+    background-color: var(--primary);
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -89,12 +89,12 @@
 }
 
 #generate-button:hover {
-    background-color: var(--green-hover);
+    background-color: var(--primary-hover);
 }
 
 #copy-button {
     color: white;
-    background-color: var(--green);
+    background-color: var(--secondary);
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;

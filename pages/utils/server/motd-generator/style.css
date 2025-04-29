@@ -1,8 +1,8 @@
 .color-button-group {
     margin-bottom: 5px;
-    background-color: #161616;
+    background-color: var(--secondary-background-color);
     padding: 5px;
-    border: 2px solid #333;
+    border: 2px solid var(--background-outline-color);
     border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +12,7 @@
 .color-button-group button {
     width: 24px;
     height: 24px;
-    border: 2px solid #444;
+    border: 2px solid var(--background-outline-color);
     border-radius: 4px;
     margin: 3px;
     cursor: pointer;
@@ -23,19 +23,14 @@
 .color-button-group button:hover {
     transform: scale(1.1);
 }
-  
-.color-button-group button.selected {
-    border: 2px solid #fff;
-    box-shadow: 0 0 5px #fff;
-}
 
 #motd-input {
     resize: none;
     font-size: 30px;
     width: 80%;
-    border: 3px solid #161616;
-    background-color: #333;
-    color: white;
+    border: 3px solid var(--background-outline-color);
+    background-color: var(--secondary-background-color);
+    color: var(--text-color);
     margin-bottom: 10px;
 }
 
@@ -44,7 +39,7 @@
 }
 
 .motd-container small {
-    color: #818181;
+    color: var(--secondary-text-color);
     font-size: 100%;
 }
 
@@ -53,13 +48,14 @@
     display: inline-block;
     width: 100%;
     margin: 0 auto 0 auto;
-    border: 2px solid #333;
+    border: 3px solid var(--background-outline-color);
     border-radius: 10px;
 }
   
 .motd-background {
     display: block;
     width: 100%;
+    border-radius: 7px;
 }
   
 .motd-text-overlay {
@@ -92,7 +88,7 @@ pre {
 
 
 #preview-button {
-    background-color: var(--pink);
+    background-color: var(--primary);
     color: white;
     margin-bottom: 20px;
     width: 20%;
@@ -106,12 +102,12 @@ pre {
 }
 
 #preview-button:hover {
-    background-color: var(--pink-hover);
+    background-color: var(--primary-hover);
 }
 
 #generate-button {
     color: white;
-    background-color: var(--green);
+    background-color: var(--secondary);
     margin-bottom: 10px;
     width: 20%;
     padding: 10px;
@@ -124,7 +120,7 @@ pre {
 }
 
 #generate-button:hover {
-    background-color: var(--green-hover);
+    background-color: var(--secondary-hover);
 }
 
 .output {
@@ -136,8 +132,8 @@ pre {
     width: 100%;
     font-size: 20px;
     resize: none;
-    border: 3px solid #161616;
-    background-color: #333;
+    border: 3px solid var(--background-outline-color);
+    background-color: var(--secondary-background-color);
     color: white;
     padding: 5px 0px;
 }

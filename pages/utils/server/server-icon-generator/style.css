@@ -3,7 +3,7 @@ input::file-selector-button {
     font-size: 15px;
     font-weight: bold;
     color: white;
-    background-color: var(--pink);
+    background-color: var(--primary);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -11,7 +11,7 @@ input::file-selector-button {
 }
 
 input::file-selector-button:hover {
-    background-color: var(--pink-hover);
+    background-color: var(--primary-hover);
 }
 
 canvas {
@@ -21,12 +21,12 @@ canvas {
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
     margin: 20px 0;
-    border: 3px solid #444;
+    border: 3px solid var(--background-outline-color);
 }
 
 #download-link {
     color: white;
-    background-color: var(--green);
+    background-color: var(--secondary);
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -39,5 +39,5 @@ canvas {
 }
 
 #download-link:hover {
-    background-color: var(--green-hover);
+    background-color: var(--secondary-hover);
 }

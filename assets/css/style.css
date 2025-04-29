@@ -15,9 +15,11 @@
   --secondary: #4CAF50;
   --secondary-hover: #45a049;
 
-  --background-color: #fff;
+  --background-color: #f7f7f7;
   --secondary-background-color: #eee;
-  --container-background-color: #e7e7e7;
+  --container-background-color: #fff;
+
+  --background-outline-color: #ccc;
 
   --text-color: #333;
   --secondary-text-color: #222;
@@ -37,6 +39,8 @@ body.dark-mode {
   --background-color: #161616;
   --secondary-background-color: #333;
   --container-background-color: #1e1e1e;
+
+  --background-outline-color: #161616;
 
   --text-color: #ffffff;
   --secondary-text-color: #ddd;
