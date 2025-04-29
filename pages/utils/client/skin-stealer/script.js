@@ -1,16 +1,19 @@
 document.getElementById('skin-form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent form submission from refreshing the page
+  event.preventDefault();
 
-  // Get the username from the input field
   const username = document.getElementById('username').value;
 
-  // Construct the URL to fetch the skin image from Minotar
   const skinUrl = `https://minotar.net/skin/${username}`;
 
-  // Set the skin image source to the URL
-  const skinImage = document.getElementById('skin-image');
-  skinImage.src = skinUrl;
-  skinImage.alt = `Skin of ${username}`;
+  const viewer = new skinview3d.SkinViewer({
+    canvas: document.getElementById("3d-skin-container"),
+    width: 300,
+    height: 400,
+    skin: `https://mc-heads.net/skin/${username}` // or use Mojang's skin URL
+  });
+  
+  viewer.controls.enableRotate = true;
+  viewer.animation = new skinview3d.IdleAnimation();  
 
   document.getElementById('skin-container').classList = ""
   document.getElementById('command-list').classList = ""
