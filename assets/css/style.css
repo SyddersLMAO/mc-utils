@@ -30,7 +30,7 @@
   --link-hover-background: #555;
   --link-hover-color: #fff;
   --dropdown-background: #444;
-  --dropdown-link-color: #ccc;
+  --dropdown-link-color: #fff;
   --dropdown-link-hover-background: #555;
   --dropdown-link-hover-color: #fff;
 }
@@ -50,10 +50,10 @@ body.light-mode {
   --link-color: #333;
   --link-hover-background: #bbb;
   --link-hover-color: #fff;
-  --dropdown-background: #444;
-  --dropdown-link-color: #ccc;
-  --dropdown-link-hover-background: #555;
-  --dropdown-link-hover-color: #fff;
+  --dropdown-background: #d6d6d6;
+  --dropdown-link-color: #333;
+  --dropdown-link-hover-background: #b4b4b4;
+  --dropdown-link-hover-color: #333;
 }
 
 * {
