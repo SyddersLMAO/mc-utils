@@ -59,6 +59,7 @@ body.light-mode {
 * {
     margin: 0;
     padding: 0;
+    font-family: 'minecraft';
 }
 
 .hidden {
@@ -66,7 +67,6 @@ body.light-mode {
 }
 
 body {
-  font-family: 'minecraft';
   background-color: var(--background-color);
 }
 
