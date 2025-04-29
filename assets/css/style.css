@@ -10,10 +10,46 @@
 }
 
 :root {
-  --green: #4CAF50;
-  --green-hover: #45a049;
-  --pink: #f49ac1;
-  --pink-hover: #f5aaca;
+  --primary: #f49ac1;
+  --primary-hover: #f5aaca;
+  --secondary: #4CAF50;
+  --secondary-hover: #45a049;
+
+  --background-color: #fff;
+  --secondary-background-color: #eee;
+  --container-background-color: #e7e7e7;
+
+  --text-color: #333;
+  --secondary-text-color: #222;
+  
+  --navbar-background: #e7e7e7;
+  --navbar-border: #cecece;
+  --link-color: #333;
+  --link-hover-background: #bbb;
+  --link-hover-color: #fff;
+  --dropdown-background: #444;
+  --dropdown-link-color: #ccc;
+  --dropdown-link-hover-background: #555;
+  --dropdown-link-hover-color: #fff;
+}
+
+body.dark-mode {
+  --background-color: #161616;
+  --secondary-background-color: #333;
+  --container-background-color: #1e1e1e;
+
+  --text-color: #ffffff;
+  --secondary-text-color: #ddd;
+
+  --navbar-background: #2b2b2b;
+  --navbar-border: #444;
+  --link-color: #fff;
+  --link-hover-background: #555;
+  --link-hover-color: #fff;
+  --dropdown-background: #444;
+  --dropdown-link-color: #ccc;
+  --dropdown-link-hover-background: #555;
+  --dropdown-link-hover-color: #fff;
 }
 
 * {
@@ -27,22 +63,23 @@
 
 body {
   font-family: 'minecraft';
-  background-color: #161616;
+  background-color: var(--background-color);
 }
 
 .container {
-    color: #ffffff;
+    color: var(--text-color);
     padding: 2rem;
     margin: 20px 15%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    background-color: #1e1e1e;
+    background-color: var(--container-background-color);
     flex-direction: column;
 }
 
 h1 {
     font-size: 50px;
     margin-bottom: 20px;
+    color: var(--primary);
 }

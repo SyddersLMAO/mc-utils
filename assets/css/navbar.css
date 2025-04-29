@@ -2,57 +2,54 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2b2b2b;
+    background-color: var(--navbar-background);
     padding: 1rem 2rem;
-    color: #fff;
-    border-bottom: 2px solid #444;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--navbar-border);
   }
   
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    background-color: #2b2b2b;
   }
 
 .navbar-brand a {
-  color: var(--pink);
+  color: var(--primary);
   text-decoration: none;
 }
   
 .navbar-links {
     list-style: none;
     display: flex;
-    background-color: #2b2b2b;
     align-items: center;
     gap: 1rem;
   }
   
 .nav-link a {
     text-decoration: none;
-    color: #ccc;
+    color: var(--text-color);
     padding: 0.5rem 0.75rem;
     transition: background 0.2s, color 0.2s;
-    background-color: #2b2b2b;
   }
   
 .nav-link a:hover {
-    background-color: #3c3c3c;
-    color: #fff;
+    background-color: var(--link-hover-background);
+    color: var(--link-hover-color);
     border-radius: 5px;
   }
 
-.nav-icon {
-    margin-left: 20px;
-}
+  .nav-icon {
+    width: 36px;
+  }
 
 .nav-icon a {
-  color: #ccc;
+  color: var(--text-color);
   transition: 0.2s, color 0.2s;
   font-size: 30px;
 }
 
 .nav-icon a:hover {
-  color: #818181;
+  color: var(--link-hover-background);
 }
 
 .dropdown {
@@ -63,7 +60,7 @@
   position: relative;
   display: inline-block;
   padding-right: 20px;
-  color: #ccc;
+  color: var(--text-color);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -85,7 +82,7 @@
   position: absolute;
   top: 100%;
   right: 0;
-  background: #333;
+  background: var(--dropdown-background);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -99,7 +96,7 @@
 .dropdown-menu li a {
   display: block;
   padding: 10px 15px;
-  color: #ccc;
+  color: var(--dropdown-link-color);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -109,6 +106,16 @@
 }
 
 .dropdown-menu li a:hover {
-  background: #444;
-  color: #fff;
+  background: var(--dropdown-link-hover-background);
+  color: var(--dropdown-link-hover-color);
 }
+
+.theme-toggle button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    width: 36px;
+    color: var(--text-color);
+    font-size: 30px;
+  }
