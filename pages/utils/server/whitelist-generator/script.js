@@ -1,19 +1,7 @@
 let playerIndex = 0;
 
 document.getElementById("add-player").addEventListener("click", () => {
-    const form = document.getElementById("player-form");
-
-    const div = document.createElement('div');
-    div.className = 'player-entry';
-    div.innerHTML = `
-        <input type="text" placeholder="Username" class="username">
-        <label>
-            <input type="checkbox" class="is-bedrock">
-            <span class="checkmark"></span>
-            Bedrock
-        </label>
-    `;
-    form.appendChild(div);
+    addPlayer();
 })
 
 document.getElementById("generate").addEventListener("click", async () => {
@@ -70,3 +58,23 @@ document.getElementById("download").addEventListener("click", () => {
     a.download = 'whitelist.json';
     a.click();
 });
+
+document.getElementById('player-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+  });
+
+function addPlayer() {
+    const form = document.getElementById("player-form");
+
+    const div = document.createElement('div');
+    div.className = 'player-entry';
+    div.innerHTML = `
+        <input type="text" placeholder="Username" class="username">
+        <label>
+            <input type="checkbox" class="is-bedrock">
+            <span class="checkmark"></span>
+            Bedrock
+        </label>
+    `;
+    form.appendChild(div);
+}

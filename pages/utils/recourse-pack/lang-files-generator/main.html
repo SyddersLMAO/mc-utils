@@ -1,0 +1,20 @@
+---
+layout: default
+title: Language Files Generator
+description: Automatically generate language files for recourse packs
+permalink: /util/language-files-generator
+---
+
+<link rel="stylesheet" href="\pages\utils\recourse-pack\lang-files-generator\style.css">
+
+<div class="container">
+    <h1>Minecraft Language Pack Generator</h1>
+    <p>Upload your base language file (e.g. en_us.json)</p>
+    <input type="file" id="fileInput" accept=".json">
+    <button id="generateBtn">Generate ZIP</button>
+    <a id="downloadLink" style="display:none;">Download ZIP</a>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="\pages\utils\recourse-pack\lang-files-generator\script.js"></script>

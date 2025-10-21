@@ -30,7 +30,7 @@
   --link-hover-background: #555;
   --link-hover-color: #fff;
   --dropdown-background: #444;
-  --dropdown-link-color: #ccc;
+  --dropdown-link-color: #fff;
   --dropdown-link-hover-background: #555;
   --dropdown-link-hover-color: #fff;
 }
@@ -43,17 +43,17 @@ body.light-mode {
   --background-outline-color: #ccc;
 
   --text-color: #333;
-  --secondary-text-color: #222;
+  --secondary-text-color: #444;
   
   --navbar-background: #e7e7e7;
   --navbar-border: #cecece;
   --link-color: #333;
   --link-hover-background: #bbb;
   --link-hover-color: #fff;
-  --dropdown-background: #444;
-  --dropdown-link-color: #ccc;
-  --dropdown-link-hover-background: #555;
-  --dropdown-link-hover-color: #fff;
+  --dropdown-background: #d6d6d6;
+  --dropdown-link-color: #333;
+  --dropdown-link-hover-background: #b4b4b4;
+  --dropdown-link-hover-color: #333;
 }
 
 * {
